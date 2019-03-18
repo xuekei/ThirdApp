@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityTable">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/imgTable"
+            android:layout_width="308dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_launcher" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/txtTable"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Fill in word." />
+
+        <Button
+            android:id="@+id/btnTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="fnChangeTextTable"
+            android:text="Change " />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/txtVwTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is table layout." />
+    </TableRow>
+</TableLayout>
